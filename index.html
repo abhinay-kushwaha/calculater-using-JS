@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <title>Calculater</title>
+</head>
+<body class="w-screen h-screen flex justify-center items-center">
+  <main class="border-2 border-black rounder-md">
+<section>
+  <input id="our-input" type="text" placeholder="Enter a value" class="pl-2 border-2 border-black-2 rounder-md m-2 p-2"readonly>
+</section>
+<section class="wrap w-52 text-center">
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay =  '';
+document.querySelector('#our-input').value = currentDisplay;
+   ">C</button>
+
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '1';
+document.querySelector('#our-input').value = currentDisplay;
+   ">1</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '2';
+document.querySelector('#our-input').value = currentDisplay;
+   ">2</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '+';
+document.querySelector('#our-input').value = currentDisplay;
+   ">+</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '3';
+document.querySelector('#our-input').value = currentDisplay;
+   ">3</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '4';
+document.querySelector('#our-input').value = currentDisplay;
+   ">4</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '-';
+document.querySelector('#our-input').value = currentDisplay;
+   ">-</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '5';
+document.querySelector('#our-input').value = currentDisplay;
+   ">5</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '6';
+document.querySelector('#our-input').value = currentDisplay;
+   ">6</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '*';
+document.querySelector('#our-input').value = currentDisplay;
+   ">X</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '7';
+document.querySelector('#our-input').value = currentDisplay;
+   ">7</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '8';
+document.querySelector('#our-input').value = currentDisplay;
+   ">8</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '/';
+document.querySelector('#our-input').value = currentDisplay;
+   ">/</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125 " onclick="
+  let result = eval(currentDisplay);
+  currentDisplay = result;
+document.querySelector('#our-input').value = currentDisplay;
+   ">=</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125" onclick="
+  currentDisplay = currentDisplay + '9';
+document.querySelector('#our-input').value = currentDisplay;
+   ">9</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200" onclick="
+  currentDisplay = currentDisplay + '1';
+document.querySelector('#our-input').value = currentDisplay;
+   ">0</button>
+  <button class="border-2 w-10 h-10 m-2 font-bold text-3xl hover:bg-slate-200 hover:scale-125 "
+  onclick="
+  currentDisplay = currentDisplay + '.';
+document.querySelector('#our-input').value = currentDisplay;
+   ">.</button>
+  <button class="border-2 w-10 h-10 m-2   text-3xl hover:bg-slate-200  hover:scale-125"
+  onclick="
+  currentDisplay = currentDisplay.slice(0, -1);
+document.querySelector('#our-input').value = currentDisplay;
+   "><i class="fa-solid fa-delete-left"></i>
+   </button>
+</section>
+
+  </main>
+  <script>
+let currentDisplay ='';
+document.querySelector('#our-input').value = currentDisplay;
+  </script>
+</body>
+</html>
